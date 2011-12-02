@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xwikidoc>
+<web>Plover</web>
+<name>WebHome</name>
+<language></language>
+<defaultLanguage>en</defaultLanguage>
+<translation>0</translation>
+<parent></parent>
+<creator>XWiki.Admin</creator>
+<author>XWiki.Admin</author>
+<customClass></customClass>
+<contentAuthor>XWiki.Admin</contentAuthor>
+<creationDate>1322825411000</creationDate>
+<date>1322825672000</date>
+<contentUpdateDate>1322825672000</contentUpdateDate>
+<version>7.1</version>
+<title>Plover Sanity Checks</title>
+<template></template>
+<defaultTemplate></defaultTemplate>
+<validationScript></validationScript>
+<comment></comment>
+<minorEdit>false</minorEdit>
+<syntaxId>xwiki/2.0</syntaxId>
+<hidden>false</hidden>
+<content>{{velocity}}
+#foreach($suite in $services.query.xwql("from doc.object(Plover.Check) as suite where doc.space='${doc.space}' group by doc.fullName").execute())
+
+{{include document="${suite}" context="new" /}}
+
+#end
+{{/velocity}}</content></xwikidoc>

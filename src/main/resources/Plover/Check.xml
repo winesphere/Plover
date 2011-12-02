@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xwikidoc>
+<web>Plover</web>
+<name>Check</name>
+<language></language>
+<defaultLanguage></defaultLanguage>
+<translation>0</translation>
+<parent></parent>
+<creator>XWiki.Admin</creator>
+<author>XWiki.Admin</author>
+<customClass></customClass>
+<contentAuthor>XWiki.Admin</contentAuthor>
+<creationDate>1322811580000</creationDate>
+<date>1322829225000</date>
+<contentUpdateDate>1322829225000</contentUpdateDate>
+<version>29.4</version>
+<title></title>
+<template></template>
+<defaultTemplate></defaultTemplate>
+<validationScript></validationScript>
+<comment></comment>
+<minorEdit>true</minorEdit>
+<syntaxId>xwiki/2.0</syntaxId>
+<hidden>false</hidden><attachment>
+<filename>magni.png</filename>
+<filesize>281</filesize>
+<author>XWiki.Admin</author>
+<date>1322820182000</date>
+<version>1.1</version>
+<comment></comment><content>iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAALtJREFUeNpiYMAB/v//zw/E84H4/X9UABKTZ8AHgAr0sWhEBiC5eJBa
+Rmw2A6kHQCwAFWoA4gNQtgMQF0DlPgCxATbb65Fs0ifguvnYDDiPUxKLJdgkYcAejwH2MEVMeMJS
+gIEIgM2AC1A6AI8+Byj9gVD0xeMIxP8Y4YQn7kEJxx/q7/loaYEfl+bz//GD9/AoxqJ5P5rC82gG
+18NthhqAy+b32BIStjiNx+tEYgCaIaRpRjOEZM0AAQYAoPStMQ1SVmoAAAAASUVORK5CYII=
+</content></attachment><attachment>
+<filename>ko.png</filename>
+<filesize>217</filesize>
+<author>XWiki.Admin</author>
+<date>1322820182000</date>
+<version>1.1</version>
+<comment></comment><content>iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAAHtJREFUeNqsk90NwCAIhC9dxNFuFEdzhI7iCBSbPljE1gS/hBeUkx8B
+DCJCtSIjzUfM0MOkdso/7U7ygqusU18iiy8PmfQ1W/XsBGQnS8JpWHaE+fiscMEkPXYinGR6g48a
+aUbrciDKjhLCTYyNMfyRtnzl8DJF1vkSYACLpfhJtcnq5AAAAABJRU5ErkJggg==
+</content></attachment><attachment>
+<filename>ok.png</filename>
+<filesize>228</filesize>
+<author>XWiki.Admin</author>
+<date>1322820182000</date>
+<version>1.1</version>
+<comment></comment><content>iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAAIZJREFUeNqsU8ENwCAIZIOO4GiM4miO4AgdwRGumphGEZXGXsJH5Q5O
+IBIAwDkCRpQzphnypcsRsUd547TkBDtSR2JUHippe7bCi0qZJoZp4CroW2PpY/JQLWkOC0941apG
+cNWIu2SN4CURg4UVQZiRGH4orBRuq7lng/TLKB8v08k6PwIMAAHZSHbqFHOIAAAAAElFTkSuQmCC
+</content></attachment>
+<class>
+<name>Plover.Check</name>
+<customClass></customClass>
+<customMapping></customMapping>
+<defaultViewSheet></defaultViewSheet>
+<defaultEditSheet></defaultEditSheet>
+<defaultWeb></defaultWeb>
+<nameField></nameField>
+<validationScript></validationScript>
+<assertion>
+<disabled>0</disabled>
+<name>assertion</name>
+<number>1</number>
+<prettyName>assertion</prettyName>
+<size>30</size>
+<unmodifiable>0</unmodifiable>
+<classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+</assertion>
+<check>
+<disabled>0</disabled>
+<name>check</name>
+<number>2</number>
+<prettyName>check</prettyName>
+<rows>5</rows>
+<size>40</size>
+<unmodifiable>0</unmodifiable>
+<classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+</check>
+</class>
+<object>
+<class>
+<name>XWiki.ClassSheetBinding</name>
+<customClass></customClass>
+<customMapping></customMapping>
+<defaultViewSheet></defaultViewSheet>
+<defaultEditSheet></defaultEditSheet>
+<defaultWeb></defaultWeb>
+<nameField></nameField>
+<validationScript></validationScript>
+<sheet>
+<customDisplay></customDisplay>
+<disabled>0</disabled>
+<name>sheet</name>
+<number>1</number>
+<picker>0</picker>
+<prettyName>Sheet</prettyName>
+<size>30</size>
+<unmodifiable>0</unmodifiable>
+<validationMessage></validationMessage>
+<validationRegExp></validationRegExp>
+<classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+</sheet>
+</class>
+<name>Plover.Check</name>
+<number>0</number>
+<className>XWiki.ClassSheetBinding</className>
+<guid>c3fb1ace-0e40-4316-ae3e-526aa0626096</guid>
+<property>
+<sheet>Plover.Check</sheet>
+</property>
+</object>
+<object>
+<class>
+<name>XWiki.JavaScriptExtension</name>
+<customClass></customClass>
+<customMapping></customMapping>
+<defaultViewSheet></defaultViewSheet>
+<defaultEditSheet></defaultEditSheet>
+<defaultWeb></defaultWeb>
+<nameField></nameField>
+<validationScript></validationScript>
+<cache>
+<cache>0</cache>
+<disabled>0</disabled>
+<displayType>select</displayType>
+<multiSelect>0</multiSelect>
+<name>cache</name>
+<number>5</number>
+<prettyName>Caching policy</prettyName>
+<relationalStorage>0</relationalStorage>
+<separator> </separator>
+<separators> ,|</separators>
+<size>1</size>
+<unmodifiable>0</unmodifiable>
+<values>long|short|default|forbid</values>
+<classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+</cache>
+<code>
+<disabled>0</disabled>
+<name>code</name>
+<number>2</number>
+<prettyName>Code</prettyName>
+<rows>20</rows>
+<size>50</size>
+<unmodifiable>0</unmodifiable>
+<classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+</code>
+<name>
+<disabled>0</disabled>
+<name>name</name>
+<number>1</number>
+<prettyName>Name</prettyName>
+<size>30</size>
+<unmodifiable>0</unmodifiable>
+<classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+</name>
+<parse>
+<disabled>0</disabled>
+<displayFormType>select</displayFormType>
+<displayType>yesno</displayType>
+<name>parse</name>
+<number>4</number>
+<prettyName>Parse content</prettyName>
+<unmodifiable>0</unmodifiable>
+<classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
+</parse>
+<use>
+<cache>0</cache>
+<disabled>0</disabled>
+<displayType>select</displayType>
+<multiSelect>0</multiSelect>
+<name>use</name>
+<number>3</number>
+<prettyName>Use this extension</prettyName>
+<relationalStorage>0</relationalStorage>
+<separator> </separator>
+<separators> ,|</separators>
+<size>1</size>
+<unmodifiable>0</unmodifiable>
+<values>currentPage=Always on this page|onDemand=On demand|always=Always on this wiki</values>
+<classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+</use>
+</class>
+<name>Plover.Check</name>
+<number>0</number>
+<className>XWiki.JavaScriptExtension</className>
+<guid>2e5cec01-2783-4fba-9663-70952a229e73</guid>
+<property>
+<cache>long</cache>
+</property>
+<property>
+<code>document.observe("xwiki:dom:loaded", function(){
+
+  $$('.plover-check').each(function(check) {
+    var out = check.down('.plover-out tt');
+    if (out &amp;&amp; out.innerHTML.trim() != '') {
+      check.down('.result').addClassName('magni');
+      check.select('.result', '.plover-out').each(function(elem) {
+        elem.observe("click", function(event) {
+          var target = event.element().up('.plover-check').down('.plover-out');
+          effect = target.getStyle('display') == "none" ? "SlideDown" : "SlideUp";
+          Effect[effect](target);
+        });
+      });
+    }
+    if (check.down('.result span.error')) { check.addClassName('error') } 
+    if (check.down('.result span.ko')) { check.addClassName('ko') } 
+    if (check.down('.result span.ok')) { check.addClassName('ok') }
+  });
+
+  $$('.plover-suite').each(function(suite) {
+    failures = suite.select('.plover-check.ko').length;
+    errors = suite.select('.plover-check.error').length;
+    checks = suite.select('.plover-check').length
+    suite.down('.plover-suite-result').down('.x-failures').update(failures);
+    suite.down('.plover-suite-result').down('.x-checks').update(checks);
+    suite.down('.plover-suite-result').down('.x-errors').update(errors);
+    suite.down('.plover-suite-result').addClassName(failures &gt; 0 ? "ko" : "ok");
+    suite.down('.plover-suite-result').addClassName(errors&gt; 0 ? "ko" : "");
+    suite.down('.plover-suite-result').removeClassName('hidden');
+  });
+
+});</code>
+</property>
+<property>
+<name></name>
+</property>
+<property>
+<parse></parse>
+</property>
+<property>
+<use>currentPage</use>
+</property>
+</object>
+<object>
+<class>
+<name>XWiki.SheetDescriptorClass</name>
+<customClass></customClass>
+<customMapping></customMapping>
+<defaultViewSheet></defaultViewSheet>
+<defaultEditSheet></defaultEditSheet>
+<defaultWeb></defaultWeb>
+<nameField></nameField>
+<validationScript></validationScript>
+<action>
+<customDisplay></customDisplay>
+<disabled>0</disabled>
+<name>action</name>
+<number>1</number>
+<picker>0</picker>
+<prettyName>Action</prettyName>
+<size>30</size>
+<unmodifiable>0</unmodifiable>
+<validationMessage></validationMessage>
+<validationRegExp></validationRegExp>
+<classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+</action>
+</class>
+<name>Plover.Check</name>
+<number>0</number>
+<className>XWiki.SheetDescriptorClass</className>
+<guid>7f251968-0679-4f60-b8e2-152d37be58c5</guid>
+<property>
+<action>view</action>
+</property>
+</object>
+<object>
+<class>
+<name>XWiki.StyleSheetExtension</name>
+<customClass></customClass>
+<customMapping></customMapping>
+<defaultViewSheet></defaultViewSheet>
+<defaultEditSheet></defaultEditSheet>
+<defaultWeb></defaultWeb>
+<nameField></nameField>
+<validationScript></validationScript>
+<cache>
+<cache>0</cache>
+<disabled>0</disabled>
+<displayType>select</displayType>
+<multiSelect>0</multiSelect>
+<name>cache</name>
+<number>5</number>
+<prettyName>Caching policy</prettyName>
+<relationalStorage>0</relationalStorage>
+<separator> </separator>
+<separators> ,|</separators>
+<size>1</size>
+<unmodifiable>0</unmodifiable>
+<values>long|short|default|forbid</values>
+<classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+</cache>
+<code>
+<disabled>0</disabled>
+<name>code</name>
+<number>2</number>
+<prettyName>Code</prettyName>
+<rows>20</rows>
+<size>50</size>
+<unmodifiable>0</unmodifiable>
+<classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+</code>
+<name>
+<disabled>0</disabled>
+<name>name</name>
+<number>1</number>
+<prettyName>Name</prettyName>
+<size>30</size>
+<unmodifiable>0</unmodifiable>
+<classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+</name>
+<parse>
+<disabled>0</disabled>
+<displayFormType>select</displayFormType>
+<displayType>yesno</displayType>
+<name>parse</name>
+<number>4</number>
+<prettyName>Parse content</prettyName>
+<unmodifiable>0</unmodifiable>
+<classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
+</parse>
+<use>
+<cache>0</cache>
+<disabled>0</disabled>
+<displayType>select</displayType>
+<multiSelect>0</multiSelect>
+<name>use</name>
+<number>3</number>
+<prettyName>Use this extension</prettyName>
+<relationalStorage>0</relationalStorage>
+<separator> </separator>
+<separators> ,|</separators>
+<size>1</size>
+<unmodifiable>0</unmodifiable>
+<values>currentPage=Always on this page|onDemand=On demand|always=Always on this wiki</values>
+<classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+</use>
+</class>
+<name>Plover.Check</name>
+<number>0</number>
+<className>XWiki.StyleSheetExtension</className>
+<guid>69423196-04fa-4e71-9b3f-7a9595c6bb59</guid>
+<property>
+<cache>long</cache>
+</property>
+<property>
+<code>#template("colorThemeInit.vm")
+
+.plover-check {
+    background-color: $theme.highlightColor;
+    background-image: -moz-linear-gradient(center top , $theme.highlightColor, $theme.highlightColor);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset;
+    color: #fff;
+    margin-bottom: 18px;
+    padding: 0px 15px;
+    position: relative;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.plover-out {
+  background-color: #EEEEEE;
+  margin-top: 10px;
+  padding: 10px;
+  cursor:pointer;
+  color:#404040;
+}
+
+.plover-check.ok {
+  background-color:#57A957;
+  background-image:-moz-linear-gradient(center top , #62C462, #57A957);
+}
+
+.plover-check.ko {
+  background-color:#C43C35;
+  background-image:-moz-linear-gradient(center top , #EE5F5B, #C43C35);
+}
+
+.plover-check.error {
+  color:#404040;
+  background-color:#EEDC94;
+  background-image:-moz-linear-gradient(center top , #FCEEC1, #EEDC94);
+}
+
+.plover-check .result {
+  margin:10px 0 5px;
+  border-bottom: 1px dotted #fff;
+  font-weight:bold;
+}
+
+.plover-check .result.magni {
+  text-indent:25px;
+  background:url($doc.getAttachmentURL('magni.png')) no-repeat 1px 3px;
+  cursor:pointer;
+}
+
+.plover-check .ko, .plover-check .ok, .plover-check .error {
+  float: right;
+  height: 32px;
+  margin-right: 1px;
+  margin-bottom:5px;
+  width: 32px;
+}
+
+.plover-check .ko, .plover-check .error {
+  background:url($doc.getAttachmentURL('ko.png')) no-repeat;
+}
+
+.plover-check .ok {
+  background:url($doc.getAttachmentURL('ok.png')) no-repeat;
+}
+
+.plover-suite-result {
+  font-size:24px;
+  margin-bottom:10px;
+}
+
+.plover-suite-result.ok {
+  color:#57A957;
+}
+
+.plover-suite-result.ko {
+  color:#C43C35;
+}
+
+.plover-suite-result .x-checks,
+.plover-suite-result .x-failures,
+.plover-suite-result .x-errors {
+  font-size:32px;
+}
+</code></property><property><name></name></property><property><parse>1</parse>
+</property>
+<property>
+<use>currentPage</use>
+</property>
+</object>
+<object>
+<class>
+<name>XWiki.WikiMacroClass</name>
+<customClass></customClass>
+<customMapping></customMapping>
+<defaultViewSheet></defaultViewSheet>
+<defaultEditSheet></defaultEditSheet>
+<defaultWeb></defaultWeb>
+<nameField></nameField>
+<validationScript></validationScript>
+<code>
+<disabled>0</disabled>
+<name>code</name>
+<number>9</number>
+<prettyName>Macro code</prettyName>
+<rows>20</rows>
+<size>40</size>
+<unmodifiable>0</unmodifiable>
+<classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+</code>
+<contentDescription>
+<disabled>0</disabled>
+<name>contentDescription</name>
+<number>8</number>
+<prettyName>Content description (Not applicable for "No content" type)</prettyName>
+<rows>5</rows>
+<size>40</size>
+<unmodifiable>0</unmodifiable>
+<classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+</contentDescription>
+<contentType>
+<cache>0</cache>
+<disabled>0</disabled>
+<displayType>select</displayType>
+<multiSelect>0</multiSelect>
+<name>contentType</name>
+<number>7</number>
+<prettyName>Macro content type</prettyName>
+<relationalStorage>0</relationalStorage>
+<separator>|</separator>
+<separators>|</separators>
+<size>1</size>
+<unmodifiable>0</unmodifiable>
+<values>Optional|Mandatory|No content</values>
+<classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+</contentType>
+<defaultCategory>
+<disabled>0</disabled>
+<name>defaultCategory</name>
+<number>4</number>
+<prettyName>Default category</prettyName>
+<size>30</size>
+<unmodifiable>0</unmodifiable>
+<classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+</defaultCategory>
+<description>
+<disabled>0</disabled>
+<name>description</name>
+<number>3</number>
+<prettyName>Macro description</prettyName>
+<rows>5</rows>
+<size>40</size>
+<unmodifiable>0</unmodifiable>
+<classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+</description>
+<id>
+<disabled>0</disabled>
+<name>id</name>
+<number>1</number>
+<prettyName>Macro id</prettyName>
+<size>30</size>
+<unmodifiable>0</unmodifiable>
+<classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+</id>
+<name>
+<disabled>0</disabled>
+<name>name</name>
+<number>2</number>
+<prettyName>Macro name</prettyName>
+<size>30</size>
+<unmodifiable>0</unmodifiable>
+<classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+</name>
+<supportsInlineMode>
+<disabled>0</disabled>
+<displayFormType>select</displayFormType>
+<displayType>yesno</displayType>
+<name>supportsInlineMode</name>
+<number>5</number>
+<prettyName>Supports inline mode</prettyName>
+<unmodifiable>0</unmodifiable>
+<classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
+</supportsInlineMode>
+<visibility>
+<cache>0</cache>
+<disabled>0</disabled>
+<displayType>select</displayType>
+<multiSelect>0</multiSelect>
+<name>visibility</name>
+<number>6</number>
+<prettyName>Macro visibility</prettyName>
+<relationalStorage>0</relationalStorage>
+<separator>|</separator>
+<separators>|</separators>
+<size>1</size>
+<unmodifiable>0</unmodifiable>
+<values>Current User|Current Wiki|Global</values>
+<classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+</visibility>
+</class>
+<name>Plover.Check</name>
+<number>0</number>
+<className>XWiki.WikiMacroClass</className>
+<guid>e6b29ef4-1bdb-4d0c-8942-7859a38dc4b8</guid>
+<property>
+<code>{{groovy}}
+import groovy.lang.Binding;
+import groovy.lang.GroovyShell;
+import org.codehaus.groovy.control.CompilationFailedException;
+
+xwiki.ssx.use('Plover.Check')
+xwiki.jsfx.use('js/scriptaculous/scriptaculous.js')
+xwiki.jsfx.use('js/scriptaculous/effects.js')
+xwiki.jsx.use('Plover.Check')
+
+def checkDocument = xcontext.macro.params.document ? xwiki.getDocument(xcontext.macro.params.document) :  doc
+def objectNumber = xcontext.macro.params.number ?: 0
+def checkObject = checkDocument.getObject("Plover.Check", objectNumber as Integer)
+if (!xwiki.hasAccessLevel("programming", checkDocument.author, checkDocument.fullName)) {
+  println """
+{{error}}
+Check document ${checkDocument.fullName} is not saved with programming rights
+{{/error}}
+"""
+
+}
+else if (!checkObject) {
+  println """
+{{error}}
+No check object found for document ${checkDocument.fullName}
+{{/error}}
+"""
+}
+else {
+
+  def assertion = checkObject.getProperty('assertion').value
+  def code = checkObject.getProperty('check').value
+
+  def bindings = [:]
+  bindings.put("xwiki", xwiki)
+  bindings.put("xcontext", xcontext)
+  bindings.put("services", services)
+  bindings.put("out", out)
+
+  println ""
+  print """(% class="plover-check" %) ((( (% class="plover-out" style="display:none" %)((( ##"""
+
+  def result = false
+  def hasError = false
+  try {
+    def shell = new GroovyShell(new Binding(bindings));
+    result = shell.evaluate(code);
+  }
+  catch (Exception e) {
+    hasError = true
+    e.printStackTrace(out)
+  }
+
+  print """## )))"""
+  println ""
+  print """(% class="result" %) ((( ${assertion} """
+  print hasError ? """(% class="error" %)""" : (result ? """(% class="ok" %)""" : """(% class="ko" %)""")
+  println " (%%) )))"
+  println ")))"
+}
+{{/groovy}}</code>
+</property>
+<property>
+<contentDescription></contentDescription>
+</property>
+<property>
+<contentType>No content</contentType>
+</property>
+<property>
+<defaultCategory></defaultCategory>
+</property>
+<property>
+<description>Evaluates the Plover sanity check contained in a document, and displays the result</description>
+</property>
+<property>
+<id>ploverCheck</id>
+</property>
+<property>
+<name>Plover sanity check</name>
+</property>
+<property>
+<supportsInlineMode>0</supportsInlineMode>
+</property>
+<property>
+<visibility>Current Wiki</visibility>
+</property>
+</object>
+<content>{{velocity}} 
+  = $doc.getDisplayTitle() =
+  $!doc.content
+  #if(!$xwiki.hasAccessLevel('programming', $doc.author, $doc.fullName))
+{{error}}
+Sanity checks document must be saved by a user with programming access level
+{{/error}}
+  #else
+(% class="plover-suite" %) (((
+  (% class="plover-suite-result hidden" %) ((( 
+    (% class="x-checks" %) (%%) check(s), (% class="x-errors" %) (%%) error(s), (% class="x-failures" %) (%%) failure(s)
+  )))
+  (% class="plover-suite-checks" %) (((
+    #foreach($check in $doc.getObjects('Plover.Check'))
+    {{ploverCheck number=$check.number /}}
+
+    #end
+  )))
+  #end
+{{/velocity}}</content></xwikidoc>
