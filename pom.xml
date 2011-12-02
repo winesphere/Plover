@@ -38,6 +38,11 @@
         <artifactId>xwiki-commons-tool-xar-plugin</artifactId>
         <version>3.2</version>
       </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-enforcer-plugin</artifactId>
+        <inherited>false</inherited>
+      </plugin>
     </plugins>
   </build>
 </project>
