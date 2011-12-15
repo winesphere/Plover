@@ -10,10 +10,10 @@
 <author>XWiki.Admin</author>
 <customClass></customClass>
 <contentAuthor>XWiki.Admin</contentAuthor>
-<creationDate>1322812439000</creationDate>
-<date>1322829106000</date>
-<contentUpdateDate>1322829106000</contentUpdateDate>
-<version>12.1</version>
+<creationDate>1323934365000</creationDate>
+<date>1323959885000</date>
+<contentUpdateDate>1323959885000</contentUpdateDate>
+<version>1.1</version>
 <title>Document sanity suite</title>
 <template></template>
 <defaultTemplate></defaultTemplate>
@@ -60,11 +60,12 @@
 <assertion>There should be no orphan document</assertion>
 </property>
 <property>
-<check>def result = xwiki.countDocuments("where doc.parent = ''") == 0
+<check>def result = xwiki.countDocuments("where doc.parent = '' and doc.fullName &lt;&gt; 'Main.WebHome'") == 0
 if (!result) {
   println "**Found orphans:**"
-  println xwiki.searchDocuments("where doc.parent = ''", 0, 0).join("\n")
-}</check>
+  println xwiki.searchDocuments("where doc.parent = '' and doc.fullName &lt;&gt; 'Main.WebHome'", 0, 0).join("\n")
+}
+return result</check>
 </property>
 </object>
 <object>
@@ -141,12 +142,79 @@ if (!result) {
 <name>Plover.DocumentsSanitySuite</name>
 <number>2</number>
 <className>Plover.Check</className>
-<guid>97193280-4e42-4fbe-807f-9e50a78e035a</guid>
+<guid>564251fd-51cb-46b5-95c3-69ed004600cc</guid>
 <property>
-<assertion>Check that does not compile</assertion>
+<assertion>There should be no document created by guest</assertion>
 </property>
 <property>
-<check>foo</check>
+<check>def result = xwiki.countDocuments("where doc.creator = 'XWiki.XWikiGuest'") == 0
+if (!result) {
+  println xwiki.searchDocuments("where doc.creator = 'XWiki.XWikiGuest'", 0, 0).join("\n")
+}
+return result</check>
+</property>
+</object>
+<object>
+<class>
+<name>Plover.Check</name>
+<customClass></customClass>
+<customMapping></customMapping>
+<defaultViewSheet></defaultViewSheet>
+<defaultEditSheet></defaultEditSheet>
+<defaultWeb></defaultWeb>
+<nameField></nameField>
+<validationScript></validationScript>
+<assertion>
+<disabled>0</disabled>
+<name>assertion</name>
+<number>1</number>
+<prettyName>assertion</prettyName>
+<size>30</size>
+<unmodifiable>0</unmodifiable>
+<classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+</assertion>
+<check>
+<disabled>0</disabled>
+<name>check</name>
+<number>2</number>
+<prettyName>check</prettyName>
+<rows>5</rows>
+<size>40</size>
+<unmodifiable>0</unmodifiable>
+<classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+</check>
+</class>
+<name>Plover.DocumentsSanitySuite</name>
+<number>3</number>
+<className>Plover.Check</className>
+<guid>ec48de7e-1600-4329-aa42-127384ed3907</guid>
+<property>
+<assertion>There should be no inconsistent attachments</assertion>
+</property>
+<property>
+<check>def results = xwiki.search("select doc.fullName, attach.filename, attach.filesize, length(content.content) from XWikiDocument as doc, XWikiAttachment as attach, XWikiAttachmentContent as content where content.id = attach.id and attach.docId = doc.id and attach.filesize != length(content.content)")
+
+if (results.size() &gt; 0) {
+  println "**Mismatched attachments:**"
+  println "|=Document name|=Attachment name|=Declared size|=Actual size"
+  results.each() {
+    println "|[[${it[0]}]]|${it[1]}|${it[2]}|${it[3]}"
+  }
+}
+
+def result = (results.size() == 0)
+
+results = xwiki.search("select doc.fullName, attach.filename, attach.filesize from XWikiDocument as doc, XWikiAttachment as attach where not exists(from XWikiAttachmentContent as content where content.id = attach.id) and attach.docId = doc.id")
+
+if (results.size() &gt; 0) {
+  println "**Missing attachments:**"
+  println "|=Document name|=Attachment name|=Declared size"
+  results.each() {
+    println "|[[${it[0]}]]|${it[1]}|${it[2]}"
+  }
+}
+
+return result &amp;&amp; (results.size() == 0)</check>
 </property>
 </object>
 <content>A suite of tests that verify the sanity of documents in this wiki.</content></xwikidoc>
