@@ -46,7 +46,7 @@
             <id>enforce-java</id>
             <phase>none</phase>
           </execution>
-		  <execution>
+	        <execution>
             <id>enforce-javadoc-exists</id>
             <phase>none</phase>
           </execution>
